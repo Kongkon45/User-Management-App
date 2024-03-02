@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { UsersContext } from "../Context/UsersContext";
+import React from "react";
+import { UseUsersContext } from "../hooks/useUsersContext";
 
 const User = ({ user }) => {
-  const {users, setUsers} = useContext(UsersContext)
+  const {users, setUsers} = UseUsersContext()
   const { id, name } = user;
 
   const handleDelete = (id)=>{
